@@ -1,0 +1,700 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Viren's DevOps portfolio website showcasing skills, projects, and resume." />
+    <title>Viren | DevOps Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="background-lines" aria-hidden="true"></div>
+    <header class="hero" id="home">
+      <nav class="nav">
+        <div class="container nav-inner">
+          <a href="#home" class="brand">&lt;/&gt; Viren Lahamage</a>
+          <div class="nav-links">
+            <a href="#about">About</a>
+            <a href="#skills">Skills</a>
+            <a href="#projects">Projects</a>
+            <a href="#certifications">Certifications</a>
+            <a href="#resume">Resume</a>
+            <a href="#contact">Contact</a>
+          </div>
+        </div>
+      </nav>
+
+      <div class="container hero-grid">
+        <div class="hero-profile-card">
+          <div class="profile-frame">
+            <img src="WhatsApp%20Image%202026-08-08%20at%205.28.04%20PM.jpeg" alt="Viren Lahamage" class="profile-image" />
+          </div>
+          <p class="profile-name">Viren Lahamage</p>
+        </div>
+
+        <div class="hero-copy">
+          <p class="eyebrow">DevOps Enthusiast • Cloud Automation • CI/CD</p>
+          <h1>Hi, I'm Viren.</h1>
+          <h2>I build reliable, scalable, and automated delivery experiences.</h2>
+          <p class="hero-text">
+            I’m passionate about simplifying infrastructure, accelerating release cycles,
+            and creating secure, dependable software delivery experiences through modern
+            DevOps practices.
+          </p>
+          <div class="hero-actions">
+            <a href="#projects" class="btn btn-primary">View Projects</a>
+            <a href="viren_resume_latex.pdf" class="btn btn-secondary" target="_blank">Download Resume</a>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <main>
+     <section id="about" class="section">
+      <div class="container">
+        <div class="section-heading">
+          <p class="eyebrow">About Me</p>
+          <h2>DevOps & Cloud Engineer focused on automation and reliable infrastructure.</h2>
+        </div>
+
+        <div class="about-grid">
+          <p>
+            I’m <strong>Viren Lahamage</strong>, a passionate
+            <strong>DevOps &amp; Cloud Engineer</strong> with
+            <strong>2+ years of professional experience</strong> in cloud infrastructure,
+            automation, CI/CD, and modern deployment environments.
+
+            <br><br>
+
+            My experience spans
+            <strong>cloud platforms, containerization, orchestration, CI/CD, and Infrastructure as Code</strong>,
+            with a strong focus on automating infrastructure and deployment workflows,
+            troubleshooting complex issues, and building reliable, scalable, and secure
+            cloud environments using modern DevOps practices.
+
+            <br><br>
+
+            I’m <strong>Microsoft Certified: Azure Administrator Associate (AZ-104)</strong>
+            and <strong>Microsoft Certified: Azure DevOps Engineer Expert (AZ-400)</strong>.
+            I hold a <strong>Bachelor’s degree in Computer Engineering from
+            Savitribai Phule Pune University</strong>, graduating with a
+            <strong>CGPA of 8.85</strong>.
+
+            <br><br>
+
+            I’m open to opportunities in
+            <strong>DevOps, Cloud Engineering, Site Reliability Engineering (SRE),
+            and Platform Engineering</strong>, where I can contribute to automation,
+            cloud infrastructure, reliability, security, and continuous improvement.
+          </p>
+        </div>
+
+      </div>
+    </section>
+
+      <section id="skills" class="section section-alt">
+        <div class="container">
+          <div class="section-heading">
+            <p class="eyebrow">Skills & Tools</p>
+            <h2>Core tools and technologies I work with.</h2>
+          </div>
+          <div class="skills-grid">
+            <article class="card">
+              <h3>CI/CD</h3>
+              <ul>
+                <li>Jenkins</li>
+                <li>GitHub Actions</li>
+                <li>GitLab CI</li>
+              </ul>
+            </article>
+            <article class="card">
+              <h3>Cloud & Infra</h3>
+              <ul>
+                <li>AWS</li>
+                <li>Linux Servers</li>
+                <li>Infrastructure as Code</li>
+              </ul>
+            </article>
+            <article class="card">
+              <h3>Containers</h3>
+              <ul>
+                <li>Docker</li>
+                <li>Kubernetes</li>
+                <li>Helm</li>
+              </ul>
+            </article>
+            <article class="card">
+              <h3>Automation</h3>
+              <ul>
+                <li>Bash</li>
+                <li>Python</li>
+                <li>Monitoring & Logging</li>
+              </ul>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section id="projects" class="section container">
+        <div class="section-heading">
+          <p class="eyebrow">Projects</p>
+          <h2>Real-world DevOps projects focused on automation, security, and cloud infrastructure.</h2>
+        </div>
+
+        <div class="projects-grid">
+
+          <!-- Project 1 -->
+         <article class="project-card">
+          <h3>Automated IAM Access Key Rotation</h3>
+
+          <p class="project-description">
+             Designed an automated access key rotation workflow that strengthens IAM
+             security while reducing the manual effort required to manage long-lived
+             credentials.
+          </p>
+
+          <div class="project-tech">
+            <span>AWS Lambda</span>
+            <span>Python</span>
+            <span>Jenkins</span>
+            <span>Airflow</span>
+          </div>
+
+          <div class="project-highlights">
+            <p>Implemented a 90-day rotation cycle using AWS Lambda.</p>
+            <p>Deactivated the existing IAM access key, generated a new key,
+               and transitioned dependent workflows to the new credentials.</p>
+            <p> Integrated the rotation process with Jenkins,
+                Airflow, and Unix servers to maintain continuous access for automation workflows..</p>
+          </div>
+
+          <a href="#" class="project-link">
+            View Code <span>↗</span>
+          </a>
+        </article>
+
+          <!-- Project 2 -->
+          <article class="project-card">
+            <h3>Secure Multi-Tier AWS Production Environment</h3>
+
+            <p class="project-description">
+              Designed and deployed a secure multi-tier AWS environment with
+              containerized workloads and separate production and development environments.
+            </p>
+
+            <div class="project-tech">
+              <span>AWS</span>
+              <span>EC2</span>
+              <span>Docker</span>
+              <span>ALB</span>
+              <span>RDS</span>
+              <span>EFS</span>
+              <span>Secrets Manager</span>
+            </div>
+
+            <div class="project-highlights">
+              <p>Built the architecture inside a dedicated AWS VPC with separate environments.</p>
+              <p>Dockerized applications and deployed containers on EC2 behind an Application Load Balancer.</p>
+              <p>Integrated RDS MySQL, EFS shared storage, and Secrets Manager for secure data and credential management.</p>
+            </div>
+
+            <a href="#" class="project-link">
+              View Code <span>↗</span>
+            </a>
+          </article>
+
+
+          <!-- Project 3 -->
+          <article class="project-card">
+            <h3>Multi-Environment Container Deployment Pipeline</h3>
+
+            <p class="project-description">
+              Designed and automated a parameterized CI/CD pipeline for controlled
+              and repeatable container deployments across multiple environments.
+            </p>
+
+            <div class="project-tech">
+              <span>Jenkins</span>
+              <span>Docker</span>
+              <span>ECR</span>
+              <span>AWS ECS Fargate</span>
+            </div>
+
+            <div class="project-highlights">
+              <p>Implemented dynamic Git branch selection to support controlled multi-environment deployments.</p>
+              <p>Built and versioned Docker images and pushed them to Amazon ECR.</p>
+              <p>Configured ECS Fargate services for controlled rolling deployments with image vulnerability scanning.</p>
+            </div>
+
+            <a href="#" class="project-link">
+              View Code <span>↗</span>
+            </a>
+          </article>
+
+        <!-- Project 4 -->
+        <article class="project-card">
+          <h3>Automated New Client Onboarding</h3>
+
+          <p class="project-description">
+            Built a self-service onboarding platform to automate the setup of new
+            customer environments, reducing manual infrastructure provisioning and
+            enabling consistent, repeatable deployments.
+          </p>
+
+          <div class="project-tech">
+            <span>Jenkins</span>
+            <span>Terraform</span>
+            <span>AWS</span>
+            <span>Docker</span>
+            <span>ECR</span>
+            <span>EC2</span>
+            <span>ALB</span>
+            <span>RDS</span>
+          </div>
+
+          <div class="project-highlights">
+            <p>
+              Created a parameterized Jenkins workflow where onboarding teams can
+              provide customer, environment, region, compute, database, and storage requirements.
+            </p>
+
+            <p>
+              Automated the provisioning of customer infrastructure using modular
+              Terraform, including networking, compute, load balancing, databases,
+              storage, and security resources.
+            </p>
+
+            <p>
+              Implemented reusable infrastructure workflows with remote Terraform
+              state and state locking to maintain consistent and controlled deployments.
+            </p>
+
+            <p>
+              Integrated container image build and ECR publishing into the onboarding
+              workflow to support automated application deployment.
+            </p>
+          </div>
+
+          <a href="#" class="project-link">
+            View Code <span>↗</span>
+          </a>
+        </article>
+        </div>
+      </section>
+
+      <section id="certifications" class="section section-alt">
+        <div class="container">
+          <div class="section-heading">
+            <p class="eyebrow">Certifications</p>
+            <h2>Professional certifications and achievements in technology and development.</h2>
+          </div>
+
+          <div class="cert-grid">
+            <article class="cert-card">
+              <div class="cert-header">
+                <div class="cert-icon">☁️</div>
+                <span class="cert-type">Cloud</span>
+              </div>
+              <h3>Google Cloud Gen AI Academy</h3>
+              <p>Advanced generative AI training and cloud deployment skills from Google Cloud.</p>
+              <div class="cert-footer">
+                <span class="cert-year">2026</span>
+                <a href="Google%20Cloud%20Gen%20AI%20Academy%20APAC%202026.pdf" class="verify-btn" target="_blank">Verify</a>
+              </div>
+            </article>
+
+            <article class="cert-card">
+              <div class="cert-header">
+                <div class="cert-icon">🐳</div>
+                <span class="cert-type">Kubernetes</span>
+              </div>
+              <h3>Kubernetes Certification</h3>
+              <p>Hands-on container orchestration certification for modern cloud-native deployments.</p>
+              <div class="cert-footer">
+                <span class="cert-year">2025</span>
+                <a href="Kubernetes%20.pdf" class="verify-btn" target="_blank">Verify</a>
+              </div>
+            </article>
+
+            <article class="cert-card">
+              <div class="cert-header">
+                <div class="cert-icon">🪟</div>
+                <span class="cert-type">Azure</span>
+              </div>
+              <h3>Microsoft Azure AZ-104</h3>
+              <p>Azure Administrator Associate exam preparation for managing cloud services and infrastructure.</p>
+              <div class="cert-footer">
+                <span class="cert-year">Coming soon</span>
+                <span class="verify-btn disabled">Pending</span>
+              </div>
+            </article>
+
+            <article class="cert-card">
+              <div class="cert-header">
+                <div class="cert-icon">⚙️</div>
+                <span class="cert-type">DevOps</span>
+              </div>
+              <h3>DevOps Professional Training</h3>
+              <p>Practical DevOps and automation skills for CI/CD, monitoring, and infrastructure reliability.</p>
+              <div class="cert-footer">
+                <span class="cert-year">2024</span>
+                <a class="verify-btn disabled">Verify</a>
+              </div>
+            </article>
+          </div>
+
+          <div class="cert-stats">
+            <div class="stat-card">
+              <h3>2</h3>
+              <p>Verified certificates</p>
+            </div>
+            <div class="stat-card">
+              <h3>+1</h3>
+              <p>Azure AZ-104 pending</p>
+            </div>
+            <div class="stat-card">
+              <h3>100%</h3>
+              <p>Completion focus</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="resume" class="section section-alt">
+        <div class="container">
+          <div class="resume-shell">
+            <div class="resume-topbar">
+              <div>
+                <p class="eyebrow">Resume</p>
+                <h2>Resume</h2>
+              </div>
+              <a href="viren_resume_latex.pdf" class="btn btn-primary" target="_blank">Download CV</a>
+            </div>
+
+            <div class="resume-nav" aria-label="Resume sections">
+              <a href="#resume-experience">EXP</a>
+              <a href="#resume-education">EDUC</a>
+              <a href="#resume-core">CORE</a>
+              <a href="#resume-tools">TOOL</a>
+            </div>
+
+            <div class="resume-content">
+              <div class="resume-profile-card">
+                <h3>Viren Sharma</h3>
+                <p class="resume-role">DevOps Enthusiast • Cloud Automation • CI/CD</p>
+                <p class="resume-intro">
+                  Passionate about building secure, scalable systems and exploring the possibilities
+                  of cloud technology through practical automation and reliable delivery.
+                </p>
+                <div class="resume-links">
+                  <a href="mailto:viren@example.com">Email</a>
+                  <a href="https://github.com/" target="_blank">GitHub</a>
+                  <a href="https://linkedin.com/" target="_blank">LinkedIn</a>
+                </div>
+              </div>
+
+              <div class="resume-sections">
+                <div id="resume-experience" class="resume-section">
+                <h4>◆ Experience</h4>
+                <div class="resume-item">
+                  <h5>DevOps Engineer</h5>
+                  <p class="resume-meta">Cloud-focused engineering work · 2024 – Present</p>
+                  <ul>
+                    <li>Build and improve CI/CD pipelines for reliable and consistent delivery.</li>
+                    <li>Automate infrastructure provisioning and streamline deployment workflows.</li>
+                    <li>Work with containerization and cloud-based environments to increase scalability.</li>
+                  </ul>
+                </div>
+                <div class="resume-item">
+                  <h5>Systems / Cloud Support</h5>
+                  <p class="resume-meta">Reliability, automation, and operations · 2021 – 2024</p>
+                  <ul>
+                    <li>Support infrastructure uptime, monitoring, and incident response.</li>
+                    <li>Help maintain secure and efficient deployment practices across environments.</li>
+                    <li>Contribute to tooling, automation, and operational improvements.</li>
+                  </ul>
+                </div>
+              </div>
+
+              <div id="resume-education" class="resume-section">
+                <h4>◆ Education</h4>
+                <div class="resume-item">
+                  <h5>Computer Science / Information Systems</h5>
+                  <p class="resume-meta">Academic foundation in systems, networking, and software engineering</p>
+                </div>
+                <div class="resume-item">
+                  <h5>Cloud & DevOps Learning</h5>
+                  <p class="resume-meta">AWS, Kubernetes, and modern cloud platform fundamentals</p>
+                </div>
+              </div>
+
+              <div id="resume-core" class="resume-section">
+                <h4>◆ Core Competencies</h4>
+                <div class="resume-tags">
+                  <span>Cloud Infrastructure</span>
+                  <span>Automation</span>
+                  <span>CI/CD</span>
+                  <span>Containerization</span>
+                  <span>Problem Solving</span>
+                  <span>Collaboration</span>
+                </div>
+              </div>
+
+              <div id="resume-tools" class="resume-section">
+                <h4>◆ Tools & Technologies</h4>
+                <div class="resume-tags">
+                  <span>AWS</span>
+                  <span>Kubernetes</span>
+                  <span>Docker</span>
+                  <span>Terraform</span>
+                  <span>GitHub Actions</span>
+                  <span>Jenkins</span>
+                  <span>Prometheus</span>
+                  <span>Grafana</span>
+                  <span>Linux</span>
+                  <span>Python</span>
+                </div>
+              </div>
+            </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+      <section id="contact" class="section contact-section">
+        <div class="container">
+
+          <div class="section-heading contact-heading">
+            <p class="eyebrow">GET IN TOUCH</p>
+            <h2>Let’s build something reliable together.</h2>
+            <p>
+              Have a project, opportunity, or just want to connect?
+              Feel free to reach out.
+            </p>
+          </div>
+
+          <div class="contact-grid">
+
+            <!-- Contact Information -->
+            <div class="contact-info">
+
+              <h3>Let’s Connect</h3>
+
+              <p class="contact-intro">
+                I’m open to connecting about DevOps, cloud engineering,
+                automation, infrastructure, and new career opportunities.
+              </p>
+
+              <div class="contact-items">
+
+                <!-- Email -->
+                <a
+                  href="mailto:virenlahamage2020@gmail.com"
+                  class="contact-item"
+                >
+                  <span class="contact-icon">✉</span>
+
+                  <div>
+                    <span class="contact-label">Email</span>
+                    <span class="contact-value">
+                      virenlahamage2020@gmail.com
+                    </span>
+                  </div>
+                </a>
+
+
+                <!-- LinkedIn -->
+                <a
+                  href="https://www.linkedin.com/in/Virenlahamage"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  class="contact-item"
+                >
+                  <span class="contact-icon">in</span>
+
+                  <div>
+                    <span class="contact-label">LinkedIn</span>
+                    <span class="contact-value">
+                      linkedin.com/in/Virenlahamage
+                    </span>
+                  </div>
+                </a>
+
+
+                <!-- GitHub -->
+                <a
+                  href="https://github.com/viren051205"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  class="contact-item"
+                >
+                  <span class="contact-icon">⌘</span>
+
+                  <div>
+                    <span class="contact-label">GitHub</span>
+                    <span class="contact-value">
+                      github.com/viren051205
+                    </span>
+                  </div>
+                </a>
+
+
+                <!-- Location -->
+                <div class="contact-item">
+                  <span class="contact-icon">⌖</span>
+
+                  <div>
+                    <span class="contact-label">Location</span>
+                    <span class="contact-value">
+                      Pune, Maharashtra, India
+                    </span>
+                  </div>
+                </div>
+
+              </div>
+
+            </div>
+
+
+            <!-- Send Message -->
+            <div class="contact-form-card">
+
+              <h3>Send a Message</h3>
+
+              <form>
+
+                <div class="form-group">
+                  <label for="contact-name">Name</label>
+
+                  <input
+                    type="text"
+                    id="contact-name"
+                    name="name"
+                    placeholder="Your name"
+                  />
+                </div>
+
+
+                <div class="form-group">
+                  <label for="contact-email">Email</label>
+
+                  <input
+                    type="email"
+                    id="contact-email"
+                    name="email"
+                    placeholder="your@email.com"
+                  />
+                </div>
+
+
+                <div class="form-group">
+                  <label for="contact-message">Message</label>
+
+                  <textarea
+                    id="contact-message"
+                    name="message"
+                    rows="5"
+                    placeholder="Tell me about your project or opportunity..."
+                  ></textarea>
+                </div>
+
+
+                <button
+                  type="submit"
+                  class="contact-submit"
+                >
+                  Send Message
+                  <span>↗</span>
+                </button>
+
+              </form>
+
+            </div>
+
+          </div>
+
+        </div>
+      </section>
+
+    <script>
+      /*
+       * Portfolio navigation
+       * Handles navigation from every section, not only Home.
+       * The navbar is fixed, so scroll to the target with a 90px offset.
+       */
+      (function () {
+        const NAV_OFFSET = 90;
+
+        function scrollToTarget(id, updateHash) {
+          const target = document.getElementById(id);
+          if (!target) return;
+
+          const top =
+            target.getBoundingClientRect().top +
+            window.pageYOffset -
+            NAV_OFFSET;
+
+          window.scrollTo({
+            top: Math.max(0, top),
+            behavior: "smooth"
+          });
+
+          if (updateHash) {
+            history.pushState(null, "", "#" + id);
+          }
+        }
+
+        document.addEventListener("DOMContentLoaded", function () {
+          document.querySelectorAll(".nav-links a[href^='#']").forEach(function (link) {
+            link.addEventListener("click", function (event) {
+              const id = link.getAttribute("href").slice(1);
+
+              if (!document.getElementById(id)) return;
+
+              event.preventDefault();
+              event.stopPropagation();
+              scrollToTarget(id, true);
+            });
+          });
+
+          document.querySelectorAll(".hero-actions a[href^='#']").forEach(function (link) {
+            link.addEventListener("click", function (event) {
+              const id = link.getAttribute("href").slice(1);
+
+              if (!document.getElementById(id)) return;
+
+              event.preventDefault();
+              scrollToTarget(id, true);
+            });
+          });
+
+          /* If the page opens directly with #about, #skills, etc. */
+          if (window.location.hash) {
+            const id = window.location.hash.slice(1);
+
+            setTimeout(function () {
+              if (document.getElementById(id)) {
+                scrollToTarget(id, false);
+              }
+            }, 100);
+          }
+        });
+
+        window.addEventListener("popstate", function () {
+          const id = window.location.hash.slice(1);
+
+          if (id && document.getElementById(id)) {
+            scrollToTarget(id, false);
+          }
+        });
+      })();
+    </script>
+  </body>
+</html>
