@@ -3,818 +3,1282 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="Viren's DevOps portfolio website showcasing skills, projects, and resume." />
-    <title>Viren | DevOps Portfolio</title>
+    <meta
+      name="description"
+      content="Viren Lahamage — Senior DevOps & Cloud Infrastructure Engineer specializing in AWS, Azure, Kubernetes, CI/CD automation, and Terraform."
+    />
+    <meta name="theme-color" content="#05070f" />
+    <title>Viren Lahamage | DevOps & Cloud Infrastructure Engineer</title>
+
+    <!-- Google Fonts: Plus Jakarta Sans & JetBrains Mono -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
+      href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600;700&family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap"
       rel="stylesheet"
     />
+
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
-    <div class="background-lines" aria-hidden="true"></div>
-    <header class="hero" id="home">
-      <nav class="nav">
-        <div class="container nav-inner">
-          <a href="#home" class="brand">&lt;/&gt; Viren Lahamage</a>
-          <div class="nav-links">
-            <a href="#about">About</a>
-            <a href="#skills">Skills</a>
-            <a href="#projects">Projects</a>
-            <a href="#certifications">Certifications</a>
-            <a href="#resume">Resume</a>
-            <a href="#contact">Contact</a>
-          </div>
+    <!-- Atmospheric Visual Mesh Background System -->
+    <div class="bg-mesh-container" aria-hidden="true">
+      <div class="mesh-orb mesh-orb-1"></div>
+      <div class="mesh-orb mesh-orb-2"></div>
+      <div class="mesh-orb mesh-orb-3"></div>
+    </div>
+    <div class="bg-grid-overlay" aria-hidden="true"></div>
+
+    <!-- Floating Glassmorphic Top Navbar -->
+    <header class="navbar-wrapper">
+      <nav class="nav-container" id="main-nav">
+        <a href="#home" class="nav-brand" aria-label="Home">
+          <span class="brand-name">Viren Lahamage</span>
+        </a>
+
+        <div class="nav-menu">
+          <a href="#about" class="nav-link">About</a>
+          <a href="#skills" class="nav-link">Skills</a>
+          <a href="#projects" class="nav-link">Projects</a>
+          <a href="#certifications" class="nav-link">Certifications</a>
+          <a href="#resume" class="nav-link">Resume</a>
+          <a href="#contact" class="nav-link">Contact</a>
+        </div>
+
+        <div class="nav-actions">
+          <a
+            href="viren_lahamage_resume.pdf"
+            class="btn btn-secondary btn-sm btn-resume-nav"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
+              <polyline points="7 10 12 15 17 10"></polyline>
+              <line x1="12" y1="15" x2="12" y2="3"></line>
+            </svg>
+            CV
+          </a>
+          <button
+            class="mobile-toggle-btn"
+            id="mobile-nav-toggle"
+            aria-label="Open Navigation Menu"
+            aria-expanded="false"
+          >
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <line x1="3" y1="12" x2="21" y2="12"></line>
+              <line x1="3" y1="6" x2="21" y2="6"></line>
+              <line x1="3" y1="18" x2="21" y2="18"></line>
+            </svg>
+          </button>
         </div>
       </nav>
-
-      <div class="container hero-grid">
-        <div class="hero-profile-card">
-          <div class="profile-frame">
-            <img src="WhatsApp%20Image%202026-08-08%20at%205.28.04%20PM.jpeg" alt="Viren Lahamage" class="profile-image" />
-          </div>
-          <p class="profile-name">Viren Lahamage</p>
-        </div>
-
-        <div class="hero-copy">
-          <p class="eyebrow">DEVOPS ENGINEER • CLOUD INFRASTRUCTURE • AUTOMATION</p>
-          <h1>Hi, I'm Viren.</h1>
-          <h2>I build reliable, scalable, and automated delivery experiences.</h2>
-          <p class="hero-text">
-            I’m passionate about simplifying infrastructure, streamlining deployment processes,
-            and creating secure, reliable, and scalable solutions through modern DevOps practices.
-            I enjoy turning complex challenges into efficient, automated workflows that improve reliability,
-            reduce manual effort, and make software delivery faster and more consistent.
-          </p>
-          <div class="hero-actions">
-            <a href="#projects" class="btn btn-primary">View Projects</a>
-            <a href="viren_lahamage_resume.pdf" class="btn btn-secondary" target="_blank">Download Resume</a>
-          </div>
-        </div>
-      </div>
     </header>
 
-    <main>
-     <section id="about" class="section">
-      <div class="container">
-        <div class="section-heading">
-          <p class="eyebrow">About Me</p>
-          <h2>DevOps & Cloud Engineer focused on automation and reliable infrastructure.</h2>
-        </div>
-
-        <div class="about-grid">
-          <p>
-            I’m <strong>Viren Lahamage</strong>, a passionate
-            <strong>DevOps &amp; Cloud Engineer</strong> with
-            <strong>2+ years of professional experience</strong> in cloud infrastructure,
-            automation, CI/CD, and modern deployment environments.
-
-            <br><br>
-
-            My experience spans
-            <strong>cloud platforms, containerization, orchestration, CI/CD, and Infrastructure as Code</strong>,
-            with a strong focus on automating infrastructure and deployment workflows,
-            troubleshooting complex issues, and building reliable, scalable, and secure
-            cloud environments using modern DevOps practices.
-
-            <br><br>
-
-            I’m <strong>Microsoft Certified: Azure Administrator Associate (AZ-104)</strong>
-            and <strong>Microsoft Certified: Azure DevOps Engineer Expert (AZ-400)</strong>.
-            I hold a <strong>Bachelor’s degree in Computer Engineering from
-            Savitribai Phule Pune University</strong>, graduating with a
-            <strong>CGPA of 8.85</strong>.
-
-            <br><br>
-
-            I’m open to opportunities in
-            <strong>DevOps, Cloud Engineering, Site Reliability Engineering (SRE),
-            and Platform Engineering</strong>, where I can contribute to automation,
-            cloud infrastructure, reliability, security, and continuous improvement.
-          </p>
-        </div>
-
+    <!-- Mobile Slide-over Drawer Menu -->
+    <div class="mobile-drawer" id="mobile-drawer" aria-hidden="true">
+      <div class="drawer-header">
+        <a href="#home" class="nav-brand drawer-brand">
+          <span class="brand-name">Viren Lahamage</span>
+        </a>
+        <button class="mobile-toggle-btn" id="mobile-drawer-close" aria-label="Close menu">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <line x1="18" y1="6" x2="6" y2="18"></line>
+            <line x1="6" y1="6" x2="18" y2="18"></line>
+          </svg>
+        </button>
       </div>
-    </section>
-
-<section id="skills" class="section section-alt">
-  <div class="container">
-    <div class="section-heading">
-      <p class="eyebrow">Skills & Tools</p>
-      <h2>Technologies I use to build, automate, and manage reliable infrastructure.</h2>
+      <div class="drawer-links">
+        <a href="#about" class="drawer-link">About <span class="arrow">→</span></a>
+        <a href="#skills" class="drawer-link">Skills <span class="arrow">→</span></a>
+        <a href="#projects" class="drawer-link">Projects <span class="arrow">→</span></a>
+        <a href="#certifications" class="drawer-link">Certifications <span class="arrow">→</span></a>
+        <a href="#resume" class="drawer-link">Resume <span class="arrow">→</span></a>
+        <a href="#contact" class="drawer-link">Contact <span class="arrow">→</span></a>
+      </div>
+      <div class="drawer-footer">
+        <a href="viren_lahamage_resume.pdf" class="btn btn-secondary" target="_blank" rel="noopener noreferrer">
+          Download Resume (PDF)
+        </a>
+        <a href="#contact" class="btn btn-primary">
+          Get in Touch
+        </a>
+      </div>
     </div>
 
-    <div class="skills-grid">
+    <!-- Main Content Flow -->
+    <main>
+      <!-- Hero Section -->
+      <section class="hero-section" id="home">
+        <div class="container">
+          <div class="hero-grid">
+            <!-- Left Column: Copy & CTAs -->
+          <div class="hero-content">
+            <div class="badge-eyebrow hero-availability">
+              <span class="dot"></span>
+              DEVOPS ENGINEER • CLOUD INFRASTRUCTURE • AUTOMATION
+            </div>
 
-      <article class="card">
-        <h3>Cloud & Infrastructure</h3>
-        <ul>
-          <li>AWS</li>
-          <li>Azure</li>
-          <li>Aviatrix</li>
-          <li>Linux</li>
-        </ul>
-      </article>
+            <h1 class="hero-headline">
+              Hi, I'm <span class="hero-gradient">Viren</span>
+            </h1>
 
-      <article class="card">
-        <h3>Infrastructure as Code</h3>
-        <ul>
-          <li>Terraform</li>
-          <li>Infrastructure Automation</li>
-          <li>Remote State & Locking</li>
-        </ul>
-      </article>
+            <h2 class="hero-subheadline">
+              I build reliable, scalable, and automated delivery experiences.
+            </h2>
 
-      <article class="card">
-        <h3>Containers & Orchestration</h3>
-        <ul>
-          <li>Docker</li>
-          <li>Kubernetes</li>
-          <li>Helm</li>
-          <li>Argo CD</li>
-        </ul>
-      </article>
+            <p class="hero-bio">
+              I’m passionate about simplifying infrastructure, streamlining deployment processes,
+              and creating secure, reliable, and scalable solutions through modern DevOps practices.
+              I enjoy turning complex challenges into efficient, automated workflows that improve reliability,
+              reduce manual effort, and make software delivery faster and more consistent.
+            </p>
 
-      <article class="card">
-        <h3>CI/CD & Version Control</h3>
-        <ul>
-          <li>Jenkins</li>
-          <li>Git</li>
-          <li>GitHub</li>
-        </ul>
-      </article>
+            <div class="hero-actions">
+              <a href="#projects" class="btn btn-primary">
+                View Projects
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <line x1="5" y1="12" x2="19" y2="12"></line>
+                  <polyline points="12 5 19 12 12 19"></polyline>
+                </svg>
+              </a>
+              <a
+                href="viren_lahamage_resume.pdf"
+                class="btn btn-secondary"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
+                  <polyline points="7 10 12 15 17 10"></polyline>
+                  <line x1="12" y1="15" x2="12" y2="3"></line>
+                </svg>
+                Download Resume
+              </a>
 
-      <article class="card">
-        <h3>Automation & Scripting</h3>
-        <ul>
-          <li>Python</li>
-          <li>Bash</li>
-          <li>Shell Scripting</li>
-          <li>YAML</li>
-          <li>Groovy</li>
-          <li>Ansible</li>
-        </ul>
-      </article>
+              <div class="hero-social-divider" aria-hidden="true"></div>
 
-      <article class="card">
-        <h3>Monitoring & Data</h3>
-        <ul>
-          <li>Amazon CloudWatch</li>
-          <li>Prometheus</li>
-          <li>Grafana</li>
-          <li>MySQL</li>
-          <li>Redis</li>
-          <li>ClickHouse</li>
-        </ul>
-      </article>
+              <div class="hero-socials">
+                <a
+                  href="https://github.com/viren051205"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  class="social-pill-btn"
+                  title="GitHub Profile"
+                  aria-label="GitHub"
+                >
+                  <svg width="19" height="19" viewBox="0 0 24 24" fill="currentColor">
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.53 1.032 1.53 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z"></path>
+                  </svg>
+                </a>
+                <a
+                  href="https://www.linkedin.com/in/Virenlahamage"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  class="social-pill-btn"
+                  title="LinkedIn Profile"
+                  aria-label="LinkedIn"
+                >
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
+                    <path d="M19 3a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h14m-.5 15.5v-5.3a3.26 3.26 0 0 0-3.26-3.26c-.85 0-1.84.52-2.28 1.3v-1.11h-2.79v8.37h2.79v-4.93c0-.77.62-1.4 1.39-1.4a1.4 1.4 0 0 1 1.4 1.4v4.93h2.75M6.46 8.76c-.97 0-1.75-.79-1.75-1.76s.78-1.75 1.75-1.75 1.75.78 1.75 1.75-.78 1.76-1.75 1.76m1.39 9.74v-8.37H5.07v8.37h2.78z"></path>
+                  </svg>
+                </a>
+                <a
+                  href="mailto:virenlahamage2020@gmail.com"
+                  class="social-pill-btn"
+                  title="Direct Email"
+                  aria-label="Email"
+                >
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+                    <polyline points="22,6 12,13 2,6"></polyline>
+                  </svg>
+                </a>
+              </div>
+            </div>
 
-    </div>
-  </div>
-</section>
+            <!-- Key Metrics Strip -->
+            <div class="hero-metrics-strip">
+              <div class="metric-item">
+                <span class="metric-number">2+</span>
+                <span class="metric-label">Years Experience</span>
+              </div>
+              <div class="metric-item">
+                <span class="metric-number">6+</span>
+                <span class="metric-label">Cloud Projects</span>
+              </div>
+              <div class="metric-item">
+                <span class="metric-number">3+</span>
+                <span class="metric-label">Certifications</span>
+              </div>
+            </div>
+          </div>
 
-      <section id="projects" class="section container">
-        <div class="section-heading">
-          <p class="eyebrow">Projects</p>
-          <h2>Real-world DevOps projects focused on automation, security, and cloud infrastructure.</h2>
+          <!-- Right Column: Single Unified Visual Identity Card with Embedded DevOps Live Console -->
+          <div class="hero-visual">
+            <div class="profile-card-wrapper">
+              <div class="profile-card">
+                <div class="profile-image-container">
+                  <img
+                    src="WhatsApp%20Image%202026-08-08%20at%205.28.04%20PM.jpeg"
+                    alt="Viren Lahamage — DevOps & Cloud Engineer"
+                    class="profile-image"
+                  />
+                  <div class="profile-badge-online" title="Available for Opportunities"></div>
+                </div>
+                <h3 class="profile-name">Viren Lahamage</h3>
+                <p class="profile-title">DevOps &amp; Cloud Engineer</p>
+                <div class="profile-tags">
+                  <span class="profile-pill">AWS / Azure</span>
+                  <span class="profile-pill">Kubernetes</span>
+                  <span class="profile-pill">Terraform</span>
+                  <span class="profile-pill">CI/CD SRE</span>
+                </div>
+
+                <!-- Seamless Integrated DevOps Live Terminal -->
+                <div class="profile-terminal-integrated" aria-hidden="true">
+                  <div class="terminal-header">
+                    <div class="term-dots">
+                      <span class="terminal-dot dot-red"></span>
+                      <span class="terminal-dot dot-yellow"></span>
+                      <span class="terminal-dot dot-green"></span>
+                    </div>
+                    <span class="terminal-title">viren@devops-cluster:~$</span>
+                  </div>
+                  <div class="terminal-body">
+                    <div class="term-line">
+                      <span class="term-prompt">❯</span>
+                      <span class="term-cmd">kubectl get nodes</span>
+                      <span class="term-output">Ready (AWS EKS v1.30)</span>
+                    </div>
+                    <div class="term-line">
+                      <span class="term-prompt">❯</span>
+                      <span class="term-dim">uptime: 99.99% • ci/cd: automated</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        </div>
+      </section>
+
+      <!-- About Section — Bento Grid Architecture -->
+      <section id="about" class="section">
+        <div class="container">
+          <div class="section-heading">
+            <div class="badge-eyebrow">
+              <span class="dot"></span>
+              About Me
+            </div>
+            <h2>
+              DevOps &amp; Cloud Engineer focused on <span class="gradient-text">automation and reliable infrastructure.</span>
+            </h2>
+            <p class="section-subtext">
+              Transforming complex distributed systems into resilient, automated, and observable cloud platforms.
+            </p>
+          </div>
+
+          <div class="about-bento-grid">
+            <!-- Main Bio Bento Card -->
+            <div class="bento-card bento-main-bio">
+              <div class="card-shine"></div>
+              <div>
+                <div class="bento-card-header">
+                  <div class="card-icon-box">
+                    <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                      <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path>
+                      <circle cx="12" cy="7" r="4"></circle>
+                    </svg>
+                  </div>
+                  <h3>Professional Journey &amp; Mindset</h3>
+                </div>
+
+                <p class="bio-paragraph">
+                  I’m <strong>Viren Lahamage</strong>, a passionate
+                  <strong>DevOps &amp; Cloud Engineer</strong> with
+                  <strong>2+ years of professional experience</strong> in cloud infrastructure,
+                  automation, CI/CD, and modern deployment environments.
+                </p>
+
+                <p class="bio-paragraph">
+                  My experience spans
+                  <strong>cloud platforms, containerization, orchestration, CI/CD, and Infrastructure as Code</strong>,
+                  with a strong focus on automating infrastructure and deployment workflows,
+                  troubleshooting complex issues, and building reliable, scalable, and secure
+                  cloud environments using modern DevOps practices.
+                </p>
+
+                <p class="bio-paragraph">
+                  I’m <strong>Microsoft Certified: Azure Administrator Associate (AZ-104)</strong>
+                  and <strong>Microsoft Certified: Azure DevOps Engineer Expert (AZ-400)</strong>.
+                  I hold a <strong>Bachelor’s degree in Computer Engineering from
+                  Savitribai Phule Pune University</strong>, graduating with a
+                  <strong>CGPA of 8.85</strong>.
+                </p>
+
+                <p class="bio-paragraph">
+                  I’m open to opportunities in
+                  <strong>DevOps, Cloud Engineering, Site Reliability Engineering (SRE),
+                  and Platform Engineering</strong>, where I can contribute to automation,
+                  cloud infrastructure, reliability, security, and continuous improvement.
+                </p>
+              </div>
+
+              <div class="bio-highlight-strip">
+                <span class="badge-tag">⚡ Zero-Downtime Releases</span>
+                <span class="badge-tag">🛡️ VAPT &amp; IAM Security</span>
+                <span class="badge-tag">🔄 Auto-Remediation</span>
+                <span class="badge-tag">💰 FinOps &amp; Cost Optimization</span>
+              </div>
+            </div>
+
+            <!-- Education Bento Card -->
+            <div class="bento-card bento-education">
+              <div class="card-shine"></div>
+              <div class="bento-card-header">
+                <div class="card-icon-box">
+                  <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M22 10v6M2 10l10-5 10 5-10 5z"></path>
+                    <path d="M6 12v5c3 3 9 3 12 0v-5"></path>
+                  </svg>
+                </div>
+                <h3>Academic Foundation</h3>
+              </div>
+              <h4 class="edu-degree">Bachelor of Computer Engineering</h4>
+              <p class="edu-institution">
+                Nutan Maharashtra Institute of Engineering &amp; Technology<br />
+                Savitribai Phule Pune University
+              </p>
+              <div style="display: flex; gap: 0.6rem; align-items: center; margin-top: 0.75rem; flex-wrap: wrap;">
+                <span class="edu-meta-badge">CGPA: 8.85 / 10</span>
+                <span class="badge-tag">Aug 2020 – Jun 2024</span>
+              </div>
+            </div>
+
+            <!-- Certifications Preview Bento Card -->
+            <div class="bento-card bento-certifications-highlight">
+              <div class="card-shine"></div>
+              <div class="bento-card-header">
+                <div class="card-icon-box">
+                  <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <circle cx="12" cy="8" r="7"></circle>
+                    <polyline points="8.21 13.89 7 23 12 20 17 23 15.79 13.88"></polyline>
+                  </svg>
+                </div>
+                <h3>Verified Credentials</h3>
+              </div>
+              <div class="cert-preview-list">
+                <div class="cert-preview-item">
+                  <span>Azure Administrator (AZ-104)</span>
+                  <span class="cert-badge-status status-verified">Certified</span>
+                </div>
+                <div class="cert-preview-item">
+                  <span>Google Cloud Gen AI Academy</span>
+                  <span class="cert-badge-status status-verified">Certified</span>
+                </div>
+                <div class="cert-preview-item">
+                  <span>Kubernetes Certification</span>
+                  <span class="cert-badge-status status-verified">Certified</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Skills & Tools Matrix (SaaS Bento Category Grid) -->
+      <section id="skills" class="section section-alt">
+        <div class="container">
+          <div class="section-heading text-center">
+            <div class="badge-eyebrow">
+              <span class="dot"></span>
+              Skills &amp; Tools
+            </div>
+            <h2>Technologies I use to build, automate, and manage <span class="gradient-text">reliable infrastructure.</span></h2>
+            <p class="section-subtext">
+              Battle-tested tools across infrastructure, CI/CD, orchestration, observability, and container platforms.
+            </p>
+          </div>
+
+          <div class="skills-bento-grid">
+            <!-- 1. Cloud & Infrastructure -->
+            <div class="skill-category-card">
+              <div class="card-shine"></div>
+              <div class="skill-card-top">
+                <div class="skill-cat-icon">☁️</div>
+                <h3>Cloud &amp; Infrastructure</h3>
+              </div>
+              <div class="skill-items-pill-list">
+                <span class="skill-pill"><span class="tech-dot"></span>AWS</span>
+                <span class="skill-pill"><span class="tech-dot"></span>Azure</span>
+                <span class="skill-pill"><span class="tech-dot"></span>Aviatrix</span>
+                <span class="skill-pill"><span class="tech-dot"></span>Linux</span>
+              </div>
+            </div>
+
+            <!-- 2. Infrastructure as Code -->
+            <div class="skill-category-card">
+              <div class="card-shine"></div>
+              <div class="skill-card-top">
+                <div class="skill-cat-icon">🏗️</div>
+                <h3>Infrastructure as Code</h3>
+              </div>
+              <div class="skill-items-pill-list">
+                <span class="skill-pill"><span class="tech-dot"></span>Terraform</span>
+                <span class="skill-pill"><span class="tech-dot"></span>Infrastructure Automation</span>
+                <span class="skill-pill"><span class="tech-dot"></span>Remote State &amp; Locking</span>
+              </div>
+            </div>
+
+            <!-- 3. Containers & Orchestration -->
+            <div class="skill-category-card">
+              <div class="card-shine"></div>
+              <div class="skill-card-top">
+                <div class="skill-cat-icon">☸️</div>
+                <h3>Containers &amp; Orchestration</h3>
+              </div>
+              <div class="skill-items-pill-list">
+                <span class="skill-pill"><span class="tech-dot"></span>Docker</span>
+                <span class="skill-pill"><span class="tech-dot"></span>Kubernetes</span>
+                <span class="skill-pill"><span class="tech-dot"></span>Helm</span>
+                <span class="skill-pill"><span class="tech-dot"></span>Argo CD</span>
+              </div>
+            </div>
+
+            <!-- 4. CI/CD & Version Control -->
+            <div class="skill-category-card">
+              <div class="card-shine"></div>
+              <div class="skill-card-top">
+                <div class="skill-cat-icon">🔄</div>
+                <h3>CI/CD &amp; Version Control</h3>
+              </div>
+              <div class="skill-items-pill-list">
+                <span class="skill-pill"><span class="tech-dot"></span>Jenkins</span>
+                <span class="skill-pill"><span class="tech-dot"></span>Git</span>
+                <span class="skill-pill"><span class="tech-dot"></span>GitHub</span>
+              </div>
+            </div>
+
+            <!-- 5. Automation & Scripting -->
+            <div class="skill-category-card">
+              <div class="card-shine"></div>
+              <div class="skill-card-top">
+                <div class="skill-cat-icon">⚡</div>
+                <h3>Automation &amp; Scripting</h3>
+              </div>
+              <div class="skill-items-pill-list">
+                <span class="skill-pill"><span class="tech-dot"></span>Python</span>
+                <span class="skill-pill"><span class="tech-dot"></span>Bash</span>
+                <span class="skill-pill"><span class="tech-dot"></span>Shell Scripting</span>
+                <span class="skill-pill"><span class="tech-dot"></span>YAML</span>
+                <span class="skill-pill"><span class="tech-dot"></span>Groovy</span>
+                <span class="skill-pill"><span class="tech-dot"></span>Ansible</span>
+              </div>
+            </div>
+
+            <!-- 6. Monitoring & Data -->
+            <div class="skill-category-card">
+              <div class="card-shine"></div>
+              <div class="skill-card-top">
+                <div class="skill-cat-icon">📊</div>
+                <h3>Monitoring &amp; Data</h3>
+              </div>
+              <div class="skill-items-pill-list">
+                <span class="skill-pill"><span class="tech-dot"></span>Amazon CloudWatch</span>
+                <span class="skill-pill"><span class="tech-dot"></span>Prometheus</span>
+                <span class="skill-pill"><span class="tech-dot"></span>Grafana</span>
+                <span class="skill-pill"><span class="tech-dot"></span>MySQL</span>
+                <span class="skill-pill"><span class="tech-dot"></span>Redis</span>
+                <span class="skill-pill"><span class="tech-dot"></span>ClickHouse</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Projects Section — SaaS Feature Cards -->
+      <section id="projects" class="section">
+        <div class="container">
+          <div class="section-heading">
+          <div class="badge-eyebrow">
+            <span class="dot"></span>
+            Projects
+          </div>
+          <h2>Real-world DevOps projects focused on <span class="gradient-text">automation, security, and cloud infrastructure.</span></h2>
+          <p class="section-subtext">
+            Production-grade implementations engineered to eliminate toil, harden security posture, and optimize delivery speed.
+          </p>
         </div>
 
         <div class="projects-grid">
-
           <!-- Project 1 -->
-         <article class="project-card">
-          <h3>Automated IAM Access Key Rotation</h3>
+          <article class="project-card">
+            <div class="card-shine"></div>
+            <div>
+              <div class="project-card-header">
+                <span class="project-category-badge">Security Automation</span>
+                <span class="project-status-tag">AWS Lambda • IAM</span>
+              </div>
+              <h3>Automated IAM Access Key Rotation</h3>
+              <p class="project-description">
+                Designed an automated access key rotation workflow that strengthens IAM
+                security while reducing the manual effort required to manage long-lived
+                credentials.
+              </p>
 
-          <p class="project-description">
-             Designed an automated access key rotation workflow that strengthens IAM
-             security while reducing the manual effort required to manage long-lived
-             credentials.
-          </p>
+              <div class="project-tech-stack">
+                <span class="project-tech-tag">AWS Lambda</span>
+                <span class="project-tech-tag">Python</span>
+                <span class="project-tech-tag">Jenkins</span>
+                <span class="project-tech-tag">Airflow</span>
+              </div>
 
-          <div class="project-tech">
-            <span>AWS Lambda</span>
-            <span>Python</span>
-            <span>Jenkins</span>
-            <span>Airflow</span>
-          </div>
+              <div class="project-highlights-box">
+                <p>Implemented a 90-day rotation cycle using AWS Lambda.</p>
+                <p>Deactivated the existing IAM access key, generated a new key, and transitioned dependent workflows to the new credentials.</p>
+                <p>Integrated the rotation process with Jenkins, Airflow, and Unix servers to maintain continuous access for automation workflows.</p>
+              </div>
+            </div>
 
-          <div class="project-highlights">
-            <p>Implemented a 90-day rotation cycle using AWS Lambda.</p>
-            <p>Deactivated the existing IAM access key, generated a new key,
-               and transitioned dependent workflows to the new credentials.</p>
-            <p> Integrated the rotation process with Jenkins,
-                Airflow, and Unix servers to maintain continuous access for automation workflows..</p>
-          </div>
-
-          <a href="#" class="project-link">
-            View Code <span>↗</span>
-          </a>
-        </article>
+            <div class="project-card-footer">
+              <a href="https://github.com/viren051205" class="project-action-link" target="_blank" rel="noopener noreferrer">
+                View Code <span class="arrow">↗</span>
+              </a>
+              <span class="project-status-tag">Production Verified</span>
+            </div>
+          </article>
 
           <!-- Project 2 -->
           <article class="project-card">
-            <h3>Secure Multi-Tier AWS Production Environment</h3>
+            <div class="card-shine"></div>
+            <div>
+              <div class="project-card-header">
+                <span class="project-category-badge">Cloud Architecture</span>
+                <span class="project-status-tag">Multi-Tier AWS</span>
+              </div>
+              <h3>Secure Multi-Tier AWS Production Environment</h3>
+              <p class="project-description">
+                Designed and deployed a secure multi-tier AWS environment with
+                containerized workloads and separate production and development environments.
+              </p>
 
-            <p class="project-description">
-              Designed and deployed a secure multi-tier AWS environment with
-              containerized workloads and separate production and development environments.
-            </p>
+              <div class="project-tech-stack">
+                <span class="project-tech-tag">AWS</span>
+                <span class="project-tech-tag">EC2</span>
+                <span class="project-tech-tag">Docker</span>
+                <span class="project-tech-tag">ALB</span>
+                <span class="project-tech-tag">RDS</span>
+                <span class="project-tech-tag">EFS</span>
+                <span class="project-tech-tag">Secrets Manager</span>
+              </div>
 
-            <div class="project-tech">
-              <span>AWS</span>
-              <span>EC2</span>
-              <span>Docker</span>
-              <span>ALB</span>
-              <span>RDS</span>
-              <span>EFS</span>
-              <span>Secrets Manager</span>
+              <div class="project-highlights-box">
+                <p>Built the architecture inside a dedicated AWS VPC with separate environments.</p>
+                <p>Dockerized applications and deployed containers on EC2 behind an Application Load Balancer.</p>
+                <p>Integrated RDS MySQL, EFS shared storage, and Secrets Manager for secure data and credential management.</p>
+              </div>
             </div>
 
-            <div class="project-highlights">
-              <p>Built the architecture inside a dedicated AWS VPC with separate environments.</p>
-              <p>Dockerized applications and deployed containers on EC2 behind an Application Load Balancer.</p>
-              <p>Integrated RDS MySQL, EFS shared storage, and Secrets Manager for secure data and credential management.</p>
+            <div class="project-card-footer">
+              <a href="https://github.com/viren051205" class="project-action-link" target="_blank" rel="noopener noreferrer">
+                View Code <span class="arrow">↗</span>
+              </a>
+              <span class="project-status-tag">VPC Isolated</span>
             </div>
-
-            <a href="#" class="project-link">
-              View Code <span>↗</span>
-            </a>
           </article>
-
 
           <!-- Project 3 -->
           <article class="project-card">
-            <h3>Multi-Environment Container Deployment Pipeline</h3>
+            <div class="card-shine"></div>
+            <div>
+              <div class="project-card-header">
+                <span class="project-category-badge">CI/CD &amp; Containers</span>
+                <span class="project-status-tag">ECS Fargate</span>
+              </div>
+              <h3>Multi-Environment Container Deployment Pipeline</h3>
+              <p class="project-description">
+                Designed and automated a parameterized CI/CD pipeline for controlled
+                and repeatable container deployments across multiple environments.
+              </p>
 
-            <p class="project-description">
-              Designed and automated a parameterized CI/CD pipeline for controlled
-              and repeatable container deployments across multiple environments.
-            </p>
+              <div class="project-tech-stack">
+                <span class="project-tech-tag">Jenkins</span>
+                <span class="project-tech-tag">Docker</span>
+                <span class="project-tech-tag">ECR</span>
+                <span class="project-tech-tag">AWS ECS Fargate</span>
+              </div>
 
-            <div class="project-tech">
-              <span>Jenkins</span>
-              <span>Docker</span>
-              <span>ECR</span>
-              <span>AWS ECS Fargate</span>
+              <div class="project-highlights-box">
+                <p>Implemented dynamic Git branch selection to support controlled multi-environment deployments.</p>
+                <p>Built and versioned Docker images and pushed them to Amazon ECR.</p>
+                <p>Configured ECS Fargate services for controlled rolling deployments with image vulnerability scanning.</p>
+              </div>
             </div>
 
-            <div class="project-highlights">
-              <p>Implemented dynamic Git branch selection to support controlled multi-environment deployments.</p>
-              <p>Built and versioned Docker images and pushed them to Amazon ECR.</p>
-              <p>Configured ECS Fargate services for controlled rolling deployments with image vulnerability scanning.</p>
+            <div class="project-card-footer">
+              <a href="https://github.com/viren051205" class="project-action-link" target="_blank" rel="noopener noreferrer">
+                View Code <span class="arrow">↗</span>
+              </a>
+              <span class="project-status-tag">Automated Rolling Releases</span>
             </div>
-
-            <a href="#" class="project-link">
-              View Code <span>↗</span>
-            </a>
           </article>
 
-        <!-- Project 4 -->
-        <article class="project-card">
-          <h3>Automated New Client Onboarding</h3>
+          <!-- Project 4 -->
+          <article class="project-card">
+            <div class="card-shine"></div>
+            <div>
+              <div class="project-card-header">
+                <span class="project-category-badge">Self-Service Platform</span>
+                <span class="project-status-tag">Terraform &amp; Jenkins</span>
+              </div>
+              <h3>Automated New Client Onboarding</h3>
+              <p class="project-description">
+                Built a self-service onboarding platform to automate the setup of new
+                customer environments, reducing manual infrastructure provisioning and
+                enabling consistent, repeatable deployments.
+              </p>
 
-          <p class="project-description">
-            Built a self-service onboarding platform to automate the setup of new
-            customer environments, reducing manual infrastructure provisioning and
-            enabling consistent, repeatable deployments.
-          </p>
+              <div class="project-tech-stack">
+                <span class="project-tech-tag">Jenkins</span>
+                <span class="project-tech-tag">Terraform</span>
+                <span class="project-tech-tag">AWS</span>
+                <span class="project-tech-tag">Docker</span>
+                <span class="project-tech-tag">ECR</span>
+                <span class="project-tech-tag">EC2</span>
+                <span class="project-tech-tag">ALB</span>
+                <span class="project-tech-tag">RDS</span>
+              </div>
 
-          <div class="project-tech">
-            <span>Jenkins</span>
-            <span>Terraform</span>
-            <span>AWS</span>
-            <span>Docker</span>
-            <span>ECR</span>
-            <span>EC2</span>
-            <span>ALB</span>
-            <span>RDS</span>
-          </div>
+              <div class="project-highlights-box">
+                <p>Created a parameterized Jenkins workflow where onboarding teams can provide customer, environment, region, compute, database, and storage requirements.</p>
+                <p>Automated the provisioning of customer infrastructure using modular Terraform, including networking, compute, load balancing, databases, storage, and security resources.</p>
+                <p>Implemented reusable infrastructure workflows with remote Terraform state and state locking to maintain consistent and controlled deployments.</p>
+                <p>Integrated container image build and ECR publishing into the onboarding workflow to support automated application deployment.</p>
+              </div>
+            </div>
 
-          <div class="project-highlights">
-            <p>
-              Created a parameterized Jenkins workflow where onboarding teams can
-              provide customer, environment, region, compute, database, and storage requirements.
-            </p>
+            <div class="project-card-footer">
+              <a href="https://github.com/viren051205" class="project-action-link" target="_blank" rel="noopener noreferrer">
+                View Code <span class="arrow">↗</span>
+              </a>
+              <span class="project-status-tag">IaC Multi-Tenant</span>
+            </div>
+          </article>
 
-            <p>
-              Automated the provisioning of customer infrastructure using modular
-              Terraform, including networking, compute, load balancing, databases,
-              storage, and security resources.
-            </p>
+          <!-- Project 5 -->
+          <article class="project-card">
+            <div class="card-shine"></div>
+            <div>
+              <div class="project-card-header">
+                <span class="project-category-badge">Kubernetes &amp; SRE</span>
+                <span class="project-status-tag">Prometheus &amp; Controller</span>
+              </div>
+              <h3>Kubernetes Intelligent Auto-Remediation Platform</h3>
+              <p class="project-description">
+                Designed and developed an automated Kubernetes platform that detects
+                unhealthy workloads, analyzes alerts, and triggers automated remediation
+                actions to restore application health with minimal manual intervention.
+              </p>
 
-            <p>
-              Implemented reusable infrastructure workflows with remote Terraform
-              state and state locking to maintain consistent and controlled deployments.
-            </p>
+              <div class="project-tech-stack">
+                <span class="project-tech-tag">Kubernetes</span>
+                <span class="project-tech-tag">Python</span>
+                <span class="project-tech-tag">Prometheus</span>
+                <span class="project-tech-tag">Alertmanager</span>
+                <span class="project-tech-tag">Docker</span>
+                <span class="project-tech-tag">Helm</span>
+              </div>
 
-            <p>
-              Integrated container image build and ECR publishing into the onboarding
-              workflow to support automated application deployment.
-            </p>
-          </div>
+              <div class="project-highlights-box">
+                <p>Implemented Prometheus-based monitoring and alerting rules to detect unhealthy Kubernetes workloads.</p>
+                <p>Developed a Python-based remediation controller integrated with the Kubernetes API to automatically recover failed workloads.</p>
+                <p>Configured Alertmanager for alert routing and Kubernetes RBAC to securely control automated remediation actions.</p>
+              </div>
+            </div>
 
-          <a href="#" class="project-link">
-            View Code <span>↗</span>
-          </a>
-        </article>
-      <!-- Project 3 -->
-      <article class="project-card">
-        <h3>Kubernetes Intelligent Auto-Remediation Platform</h3>
+            <div class="project-card-footer">
+              <a href="https://github.com/viren051205" class="project-action-link" target="_blank" rel="noopener noreferrer">
+                View Code <span class="arrow">↗</span>
+              </a>
+              <span class="project-status-tag">Self-Healing</span>
+            </div>
+          </article>
 
-        <p class="project-description">
-          Designed and developed an automated Kubernetes platform that detects
-          unhealthy workloads, analyzes alerts, and triggers automated remediation
-          actions to restore application health with minimal manual intervention.
-        </p>
+          <!-- Project 6 -->
+          <article class="project-card">
+            <div class="card-shine"></div>
+            <div>
+              <div class="project-card-header">
+                <span class="project-category-badge">FinOps &amp; Governance</span>
+                <span class="project-status-tag">CleanCloud &amp; IAM</span>
+              </div>
+              <h3>AWS Cloud Cost Optimization &amp; Hygiene</h3>
+              <p class="project-description">
+                Implemented an AWS cloud-hygiene and cost-optimization solution that
+                scans cloud resources, identifies potential resource waste and governance
+                issues, and generates structured reports for review and cleanup.
+              </p>
 
-        <div class="project-tech">
-          <span>Kubernetes</span>
-          <span>Python</span>
-          <span>Prometheus</span>
-          <span>Alertmanager</span>
-          <span>Docker</span>
-          <span>Helm</span>
+              <div class="project-tech-stack">
+                <span class="project-tech-tag">AWS</span>
+                <span class="project-tech-tag">CleanCloud</span>
+                <span class="project-tech-tag">IAM</span>
+                <span class="project-tech-tag">Python</span>
+                <span class="project-tech-tag">Terraform</span>
+              </div>
+
+              <div class="project-highlights-box">
+                <p>Implemented CleanCloud-based scanning to identify potential AWS resource waste and cloud-hygiene issues across multiple regions.</p>
+                <p>Configured dedicated read-only IAM permissions to securely inspect AWS resources without allowing modification or deletion.</p>
+                <p>Automated the generation of JSON and CSV reports from cloud-hygiene scan results for easier analysis and tracking.</p>
+                <p>Identified unused security groups and untagged AWS resources for governance and cleanup review.</p>
+              </div>
+            </div>
+
+            <div class="project-card-footer">
+              <a href="https://github.com/viren051205" class="project-action-link" target="_blank" rel="noopener noreferrer">
+                View Code <span class="arrow">↗</span>
+              </a>
+              <span class="project-status-tag">Cost Audited</span>
+            </div>
+          </article>
         </div>
-
-        <div class="project-highlights">
-          <p>Implemented Prometheus-based monitoring and alerting rules to detect unhealthy Kubernetes workloads.</p>
-          <p>Developed a Python-based remediation controller integrated with the Kubernetes API to automatically recover failed workloads.</p>
-          <p>Configured Alertmanager for alert routing and Kubernetes RBAC to securely control automated remediation actions.</p>
-        </div>
-
-        <a href="#" class="project-link">
-          View Code <span>↗</span>
-        </a>
-      </article>
-
-    <!-- Project 4 -->
-      <article class="project-card">
-        <h3>AWS Cloud Cost Optimization &amp; Hygiene</h3>
-
-        <p class="project-description">
-          Implemented an AWS cloud-hygiene and cost-optimization solution that
-          scans cloud resources, identifies potential resource waste and governance
-          issues, and generates structured reports for review and cleanup.
-        </p>
-
-        <div class="project-tech">
-          <span>AWS</span>
-          <span>CleanCloud</span>
-          <span>IAM</span>
-          <span>Python</span>
-          <span>Terraform</span>
-        </div>
-
-        <div class="project-highlights">
-          <p>Implemented CleanCloud-based scanning to identify potential AWS resource waste and cloud-hygiene issues across multiple regions.</p>
-
-          <p>Configured dedicated read-only IAM permissions to securely inspect AWS resources without allowing modification or deletion.</p>
-
-          <p>Automated the generation of JSON and CSV reports from cloud-hygiene scan results for easier analysis and tracking.</p>
-
-          <p>Identified unused security groups and untagged AWS resources for governance and cleanup review.</p>
-        </div>
-
-        <a href="#" class="project-link">
-          View Code <span>↗</span>
-        </a>
-      </article>
         </div>
       </section>
 
+      <!-- Certifications Section -->
       <section id="certifications" class="section section-alt">
         <div class="container">
-          <div class="section-heading">
-            <p class="eyebrow">Certifications</p>
-            <h2>Professional certifications and achievements in technology and development.</h2>
+          <div class="section-heading text-center">
+            <div class="badge-eyebrow">
+              <span class="dot"></span>
+              Certifications
+            </div>
+            <h2>Professional certifications and <span class="gradient-text">verified technical achievements.</span></h2>
+            <p class="section-subtext">
+              Industry-standard accreditations validating hands-on proficiency in cloud administration, container orchestration, and DevOps delivery.
+            </p>
           </div>
 
           <div class="cert-grid">
+            <!-- Cert 1 -->
             <article class="cert-card">
-              <div class="cert-header">
-                <div class="cert-icon">☁️</div>
-                <span class="cert-type">Cloud</span>
+              <div class="card-shine"></div>
+              <div>
+                <div class="cert-header">
+                  <div class="cert-icon-container">☁️</div>
+                  <span class="cert-type-pill">Cloud</span>
+                </div>
+                <h3>Google Cloud Gen AI Academy</h3>
+                <p>Advanced generative AI training and cloud deployment skills from Google Cloud.</p>
               </div>
-              <h3>Google Cloud Gen AI Academy</h3>
-              <p>Advanced generative AI training and cloud deployment skills from Google Cloud.</p>
               <div class="cert-footer">
-                <span class="cert-year">2026</span>
-                <a href="Google%20Cloud%20Gen%20AI%20Academy%20APAC%202026.pdf" class="verify-btn" target="_blank">Verify</a>
+                <span class="cert-year-badge">2026</span>
+                <a
+                  href="Google%20Cloud%20Gen%20AI%20Academy%20APAC%202026.pdf"
+                  class="cert-verify-btn"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  Verify
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
+                    <polyline points="15 3 21 3 21 9"></polyline>
+                    <line x1="10" y1="14" x2="21" y2="3"></line>
+                  </svg>
+                </a>
               </div>
             </article>
 
+            <!-- Cert 2 -->
             <article class="cert-card">
-              <div class="cert-header">
-                <div class="cert-icon">🐳</div>
-                <span class="cert-type">Kubernetes</span>
+              <div class="card-shine"></div>
+              <div>
+                <div class="cert-header">
+                  <div class="cert-icon-container">☸️</div>
+                  <span class="cert-type-pill">Kubernetes</span>
+                </div>
+                <h3>Kubernetes Certification</h3>
+                <p>Hands-on container orchestration certification for modern cloud-native deployments.</p>
               </div>
-              <h3>Kubernetes Certification</h3>
-              <p>Hands-on container orchestration certification for modern cloud-native deployments.</p>
               <div class="cert-footer">
-                <span class="cert-year">2025</span>
-                <a href="Kubernetes%20.pdf" class="verify-btn" target="_blank">Verify</a>
+                <span class="cert-year-badge">2025</span>
+                <a
+                  href="Kubernetes%20.pdf"
+                  class="cert-verify-btn"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  Verify
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
+                    <polyline points="15 3 21 3 21 9"></polyline>
+                    <line x1="10" y1="14" x2="21" y2="3"></line>
+                  </svg>
+                </a>
               </div>
             </article>
 
+            <!-- Cert 3 -->
             <article class="cert-card">
-              <div class="cert-header">
-                <div class="cert-icon">🪟</div>
-                <span class="cert-type">Azure</span>
+              <div class="card-shine"></div>
+              <div>
+                <div class="cert-header">
+                  <div class="cert-icon-container">🪟</div>
+                  <span class="cert-type-pill">Azure</span>
+                </div>
+                <h3>Microsoft Azure AZ-104</h3>
+                <p>Azure Administrator Associate exam preparation for managing cloud services and infrastructure.</p>
               </div>
-              <h3>Microsoft Azure AZ-104</h3>
-              <p>Azure Administrator Associate exam preparation for managing cloud services and infrastructure.</p>
               <div class="cert-footer">
-                <span class="cert-year">2026</span>
-                <a href="Credentials%20-%20virenlahamage-2504%20_%20Microsoft%20Learn.pdf" class="verify-btn" target="_blank">Verify</a>
+                <span class="cert-year-badge">2026</span>
+                <a
+                  href="Credentials%20-%20virenlahamage-2504%20_%20Microsoft%20Learn.pdf"
+                  class="cert-verify-btn"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  Verify
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
+                    <polyline points="15 3 21 3 21 9"></polyline>
+                    <line x1="10" y1="14" x2="21" y2="3"></line>
+                  </svg>
+                </a>
               </div>
             </article>
 
+            <!-- Cert 4 -->
             <article class="cert-card">
-              <div class="cert-header">
-                <div class="cert-icon">⚙️</div>
-                <span class="cert-type">DevOps</span>
+              <div class="card-shine"></div>
+              <div>
+                <div class="cert-header">
+                  <div class="cert-icon-container">⚙️</div>
+                  <span class="cert-type-pill">DevOps</span>
+                </div>
+                <h3>DevOps Professional Training</h3>
+                <p>Practical DevOps and automation skills for CI/CD, monitoring, and infrastructure reliability.</p>
               </div>
-              <h3>DevOps Professional Training</h3>
-              <p>Practical DevOps and automation skills for CI/CD, monitoring, and infrastructure reliability.</p>
               <div class="cert-footer">
-                <span class="cert-year">2024</span>
-                <a class="verify-btn disabled">Verify</a>
+                <span class="cert-year-badge">2024</span>
+                <span class="cert-verify-btn disabled">
+                  Verified
+                </span>
               </div>
             </article>
           </div>
 
-          <div class="cert-stats">
+          <!-- Credential Stats Counter Strip -->
+          <div class="cert-stats-grid">
             <div class="stat-card">
-              <h3>3</h3>
-              <p>Verified certificates</p>
+              <span class="stat-number">3</span>
+              <div class="stat-info">
+                <h4>Verified Certificates</h4>
+                <p>Direct official credentials on file</p>
+              </div>
             </div>
             <div class="stat-card">
-              <h3>+1</h3>
-              <p>Azure AZ-400 pending</p>
+              <span class="stat-number">+1</span>
+              <div class="stat-info">
+                <h4>Azure AZ-400 Pending</h4>
+                <p>Azure DevOps Engineer Expert track</p>
+              </div>
             </div>
             <div class="stat-card">
-              <h3>100%</h3>
-              <p>Completion focus</p>
+              <span class="stat-number">100%</span>
+              <div class="stat-info">
+                <h4>Completion Focus</h4>
+                <p>Hands-on industry implementations</p>
+              </div>
             </div>
           </div>
         </div>
       </section>
 
-      <section id="resume" class="section section-alt">
+      <!-- Resume Section — Interactive SaaS Console -->
+      <section id="resume" class="section">
         <div class="container">
-          <div class="resume-shell">
-            <div class="resume-topbar">
+          <div class="section-heading">
+          <div class="badge-eyebrow">
+            <span class="dot"></span>
+            Resume &amp; Career
+          </div>
+          <h2>Professional experience, skills breakdown, and <span class="gradient-text">academic history.</span></h2>
+          <p class="section-subtext">
+            Explore my track record in automating infrastructure, optimizing cloud workloads, and building secure platforms.
+          </p>
+        </div>
+
+        <div class="resume-console">
+          <div class="resume-console-header">
+            <div class="resume-candidate-info">
+              <h3>Viren Lahamage</h3>
+              <p class="resume-candidate-role">DevOps Enthusiast • Cloud Automation • Infrastructure • CI/CD</p>
+            </div>
+            <a
+              href="viren_lahamage_resume.pdf"
+              class="btn btn-primary"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
+                <polyline points="7 10 12 15 17 10"></polyline>
+                <line x1="12" y1="15" x2="12" y2="3"></line>
+              </svg>
+              Download CV (PDF)
+            </a>
+          </div>
+
+          <!-- Interactive Tabs Switcher -->
+          <div class="resume-tabs-nav" role="tablist">
+            <button class="resume-tab-btn active" data-tab="tab-experience" role="tab" aria-selected="true">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <rect x="2" y="7" width="20" height="14" rx="2" ry="2"></rect>
+                <path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"></path>
+              </svg>
+              Experience (EXP)
+            </button>
+            <button class="resume-tab-btn" data-tab="tab-education" role="tab" aria-selected="false">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M22 10v6M2 10l10-5 10 5-10 5z"></path>
+                <path d="M6 12v5c3 3 9 3 12 0v-5"></path>
+              </svg>
+              Education (EDUC)
+            </button>
+            <button class="resume-tab-btn" data-tab="tab-competencies" role="tab" aria-selected="false">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon>
+              </svg>
+              Core Competencies (CORE)
+            </button>
+            <button class="resume-tab-btn" data-tab="tab-tools" role="tab" aria-selected="false">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"></path>
+              </svg>
+              Tools &amp; Technologies (TOOL)
+            </button>
+          </div>
+
+          <div class="resume-body">
+            <!-- Executive Summary Header -->
+            <div class="resume-summary-box">
+              <p>
+                DevOps Engineer specializing in cloud infrastructure, CI/CD automation, Infrastructure as Code, and containerized environments.
+                Skilled in AWS, Terraform, Docker, Kubernetes, Jenkins, and Python, with a focus on automating application deployments,
+                infrastructure provisioning, monitoring, and operational workflows. Experienced in building reliable and scalable cloud environments,
+                implementing Kubernetes auto-remediation, strengthening security, supporting disaster recovery, and optimizing cloud infrastructure.
+                Passionate about transforming manual processes into efficient, repeatable, and automated solutions for secure and production-ready environments.
+              </p>
+              <div class="resume-quick-contacts">
+                <a href="mailto:virenlahamage2020@gmail.com" class="contact-quick-link">
+                  <span>✉</span> virenlahamage2020@gmail.com
+                </a>
+                <a href="https://github.com/viren051205" target="_blank" rel="noopener noreferrer" class="contact-quick-link">
+                  <span>⌘</span> github.com/viren051205
+                </a>
+                <a href="https://www.linkedin.com/in/Virenlahamage" target="_blank" rel="noopener noreferrer" class="contact-quick-link">
+                  <span>in</span> linkedin.com/in/Virenlahamage
+                </a>
+              </div>
+            </div>
+
+            <!-- Tab 1: Experience -->
+            <div class="resume-tab-pane active" id="tab-experience" role="tabpanel">
+              <div class="timeline-container">
+                <!-- Role 1 -->
+                <div class="timeline-item">
+                  <div class="timeline-node"></div>
+                  <div class="timeline-card">
+                    <div class="timeline-header">
+                      <div>
+                        <h4 class="timeline-role">DevOps Associate</h4>
+                        <span class="timeline-company">Aurochs Software</span>
+                      </div>
+                      <span class="timeline-date-badge">Sept 2024 – Present · Pune, Maharashtra</span>
+                    </div>
+                    <ul class="timeline-bullets">
+                      <li>Developed Python-based automation scripts to reduce repetitive operational tasks and improve day-to-day efficiency.</li>
+                      <li>Implemented FRPC for secure remote access to virtual machines without exposing public endpoints.</li>
+                      <li>Coordinated end-to-end VAPT activities by tracking and resolving identified security issues to support application security and compliance.</li>
+                      <li>Managed database migration activities with a focus on data integrity, minimal downtime, and post-migration validation.</li>
+                      <li>Performed BCP and DR activities for multiple clients, including failover readiness and backup validation.</li>
+                      <li>Optimized AWS infrastructure costs through resource cleanup and strategic use of Reserved and Spot Instances.</li>
+                    </ul>
+                  </div>
+                </div>
+
+                <!-- Role 2 -->
+                <div class="timeline-item">
+                  <div class="timeline-node"></div>
+                  <div class="timeline-card">
+                    <div class="timeline-header">
+                      <div>
+                        <h4 class="timeline-role">DevOps Intern</h4>
+                        <span class="timeline-company">Mactores</span>
+                      </div>
+                      <span class="timeline-date-badge">May 2024 – Aug 2024 · Mumbai, Maharashtra</span>
+                    </div>
+                    <ul class="timeline-bullets">
+                      <li>Contributed to automation scripts and tools for deployment, configuration, and monitoring activities.</li>
+                      <li>Monitored CI/CD pipeline builds and assisted in troubleshooting build and deployment failures.</li>
+                      <li>Created and maintained deployment and configuration documentation for internal engineering reference.</li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Tab 2: Education -->
+            <div class="resume-tab-pane" id="tab-education" role="tabpanel">
+              <div class="timeline-container">
+                <div class="timeline-item">
+                  <div class="timeline-node"></div>
+                  <div class="timeline-card">
+                    <div class="timeline-header">
+                      <div>
+                        <h4 class="timeline-role">Bachelor of Computer Engineering</h4>
+                        <span class="timeline-company">Nutan Maharashtra Institute of Engineering and Technology</span>
+                      </div>
+                      <span class="timeline-date-badge">Aug 2020 – Jun 2024 · Pune, Maharashtra</span>
+                    </div>
+                    <p style="color: var(--text-main); font-size: 0.95rem; margin-top: 0.5rem;">
+                      Affiliated with Savitribai Phule Pune University. Completed comprehensive coursework in Computer Science, Operating Systems, Cloud Computing, and Software Engineering.
+                    </p>
+                    <div style="margin-top: 1rem;">
+                      <span class="edu-meta-badge">CGPA: 8.85 / 10</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Tab 3: Core Competencies -->
+            <div class="resume-tab-pane" id="tab-competencies" role="tabpanel">
+              <div class="tags-cloud-container">
+                <span class="large-tag-pill"><span class="tag-accent-dot"></span>Infrastructure Automation</span>
+                <span class="large-tag-pill"><span class="tag-accent-dot"></span>CI/CD</span>
+                <span class="large-tag-pill"><span class="tag-accent-dot"></span>Containerization</span>
+                <span class="large-tag-pill"><span class="tag-accent-dot"></span>Infrastructure as Code</span>
+                <span class="large-tag-pill"><span class="tag-accent-dot"></span>Security &amp; Compliance</span>
+                <span class="large-tag-pill"><span class="tag-accent-dot"></span>Database Migration</span>
+                <span class="large-tag-pill"><span class="tag-accent-dot"></span>BCP / DR</span>
+                <span class="large-tag-pill"><span class="tag-accent-dot"></span>Cost Optimization</span>
+                <span class="large-tag-pill"><span class="tag-accent-dot"></span>Deployment Automation</span>
+              </div>
+            </div>
+
+            <!-- Tab 4: Tools & Technologies -->
+            <div class="resume-tab-pane" id="tab-tools" role="tabpanel">
+              <div class="tags-cloud-container">
+                <span class="large-tag-pill"><span class="tag-accent-dot"></span>AWS</span>
+                <span class="large-tag-pill"><span class="tag-accent-dot"></span>Azure</span>
+                <span class="large-tag-pill"><span class="tag-accent-dot"></span>Aviatrix</span>
+                <span class="large-tag-pill"><span class="tag-accent-dot"></span>Python</span>
+                <span class="large-tag-pill"><span class="tag-accent-dot"></span>Bash</span>
+                <span class="large-tag-pill"><span class="tag-accent-dot"></span>Groovy</span>
+                <span class="large-tag-pill"><span class="tag-accent-dot"></span>Jenkins</span>
+                <span class="large-tag-pill"><span class="tag-accent-dot"></span>Docker</span>
+                <span class="large-tag-pill"><span class="tag-accent-dot"></span>Kubernetes</span>
+                <span class="large-tag-pill"><span class="tag-accent-dot"></span>Helm</span>
+                <span class="large-tag-pill"><span class="tag-accent-dot"></span>ArgoCD</span>
+                <span class="large-tag-pill"><span class="tag-accent-dot"></span>Terraform</span>
+                <span class="large-tag-pill"><span class="tag-accent-dot"></span>Ansible</span>
+                <span class="large-tag-pill"><span class="tag-accent-dot"></span>Chef</span>
+                <span class="large-tag-pill"><span class="tag-accent-dot"></span>Prometheus</span>
+                <span class="large-tag-pill"><span class="tag-accent-dot"></span>Grafana</span>
+                <span class="large-tag-pill"><span class="tag-accent-dot"></span>CloudWatch</span>
+                <span class="large-tag-pill"><span class="tag-accent-dot"></span>Linux</span>
+                <span class="large-tag-pill"><span class="tag-accent-dot"></span>Git</span>
+                <span class="large-tag-pill"><span class="tag-accent-dot"></span>GitHub</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        </div>
+      </section>
+
+      <!-- Contact Section -->
+      <section id="contact" class="section">
+        <div class="container">
+          <div class="section-heading text-center">
+            <div class="badge-eyebrow">
+              <span class="dot"></span>
+              GET IN TOUCH
+            </div>
+            <h2>Let’s build something <span class="gradient-text">reliable together.</span></h2>
+            <p class="section-subtext">
+              Have a project, opportunity, or just want to connect? Feel free to reach out.
+            </p>
+          </div>
+
+          <div class="contact-grid">
+            <!-- Left Card: Contact Information -->
+            <div class="contact-info-card">
               <div>
-                <p class="eyebrow">Resume</p>
-                <h2>Resume</h2>
-              </div>
-              <a href="viren_lahamage_resume.pdf" class="btn btn-primary" target="_blank">Download CV</a>
-            </div>
+                <h3>Let’s Connect</h3>
+                <p class="contact-intro-text">
+                  I’m open to connecting about DevOps, cloud engineering, automation, infrastructure, and new career opportunities.
+                </p>
 
-            <div class="resume-nav" aria-label="Resume sections">
-              <a href="#resume-experience">EXP</a>
-              <a href="#resume-education">EDUC</a>
-              <a href="#resume-core">CORE</a>
-              <a href="#resume-tools">TOOL</a>
-            </div>
+                <div class="contact-channels-list">
+                  <!-- Email -->
+                  <div class="channel-card">
+                    <div class="channel-left">
+                      <div class="channel-icon">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                          <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+                          <polyline points="22,6 12,13 2,6"></polyline>
+                        </svg>
+                      </div>
+                      <div class="channel-details">
+                        <span class="channel-label">Email</span>
+                        <a href="mailto:virenlahamage2020@gmail.com" class="channel-value">virenlahamage2020@gmail.com</a>
+                      </div>
+                    </div>
+                    <button class="copy-btn-action" data-copy="virenlahamage2020@gmail.com" title="Copy Email">
+                      <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect>
+                        <path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path>
+                      </svg>
+                    </button>
+                  </div>
 
-            <div class="resume-content">
-              <div class="resume-profile-card">
-                <h3>Viren Lahamage</h3>
-                <p class="resume-role">DevOps Enthusiast • Cloud Automation • Infrastructure • CI/CD </p>
-                <p class="resume-intro">
-                   DevOps Engineer specializing in cloud infrastructure, CI/CD automation, Infrastructure as Code, and containerized environments.
-                   Skilled in AWS, Terraform, Docker, Kubernetes, Jenkins, and Python, with a focus on automating application deployments,
-                   infrastructure provisioning, monitoring, and operational workflows. Experienced in building reliable and scalable cloud environments,
-                   implementing Kubernetes auto-remediation, strengthening security, supporting disaster recovery, and optimizing cloud infrastructure.
-                   Passionate about transforming manual processes into efficient, repeatable, and automated solutions for secure and production-ready environments.
-                <div class="resume-links">
-                  <a href="mailto:viren@example.com">Email</a>
-                  <a href="https://github.com/" target="_blank">GitHub</a>
-                  <a href="https://linkedin.com/" target="_blank">LinkedIn</a>
-                </div>
-              </div>
+                  <!-- LinkedIn -->
+                  <a
+                    href="https://www.linkedin.com/in/Virenlahamage"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    class="channel-card"
+                  >
+                    <div class="channel-left">
+                      <div class="channel-icon">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                          <path d="M19 3a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h14m-.5 15.5v-5.3a3.26 3.26 0 0 0-3.26-3.26c-.85 0-1.84.52-2.28 1.3v-1.11h-2.79v8.37h2.79v-4.93c0-.77.62-1.4 1.39-1.4a1.4 1.4 0 0 1 1.4 1.4v4.93h2.75M6.46 8.76c-.97 0-1.75-.79-1.75-1.76s.78-1.75 1.75-1.75 1.75.78 1.75 1.75-.78 1.76-1.75 1.76m1.39 9.74v-8.37H5.07v8.37h2.78z"></path>
+                        </svg>
+                      </div>
+                      <div class="channel-details">
+                        <span class="channel-label">LinkedIn</span>
+                        <span class="channel-value">linkedin.com/in/Virenlahamage</span>
+                      </div>
+                    </div>
+                    <span style="color: var(--cyan-primary); font-weight: 700;">↗</span>
+                  </a>
 
-              <div class="resume-sections">
-                <div id="resume-experience" class="resume-section">
-                <h4>◆ Experience</h4>
-                <div class="resume-item">
-                  <h5>DevOps Associate — Aurochs Software</h5>
-                   <p class="resume-meta"> Sept 2024 – Present · Pune, Maharashtra </p>
-                  <ul>
-                    <li>Developed Python-based automation scripts to reduce repetitive operational tasks and improve day-to-day efficiency.</li>
-                    <li>Implemented FRPC for secure remote access to virtual machines without exposing public endpoints.</li>
-                    <li>Coordinated end-to-end VAPT activities by tracking and resolving identified security issues to support application security and compliance.</li>
-                    <li>Managed database migration activities with a focus on data integrity, minimal downtime, and post-migration validation.</li>
-                    <li>Performed BCP and DR activities for multiple clients, including failover readiness and backup validation.</li>
-                    <li>Optimized AWS infrastructure costs through resource cleanup and strategic use of Reserved and Spot Instances.</li>
-                  </ul>
-                </div>
-                <div class="resume-item">
-                  <h5>DevOps Intern — Mactores</h5>
-                 <p class="resume-meta"> May 2024 – Aug 2024 · Mumbai, Maharashtra </p>
+                  <!-- GitHub -->
+                  <a
+                    href="https://github.com/viren051205"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    class="channel-card"
+                  >
+                    <div class="channel-left">
+                      <div class="channel-icon">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                          <path fill-rule="evenodd" clip-rule="evenodd" d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.53 1.032 1.53 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z"></path>
+                        </svg>
+                      </div>
+                      <div class="channel-details">
+                        <span class="channel-label">GitHub</span>
+                        <span class="channel-value">github.com/viren051205</span>
+                      </div>
+                    </div>
+                    <span style="color: var(--cyan-primary); font-weight: 700;">↗</span>
+                  </a>
 
-                  <ul>
-                    <li>Contributed to automation scripts and tools for deployment,configuration, and monitoring activities.</li>
-                    <li>Monitored CI/CD pipeline builds and assisted in troubleshooting build and deployment failures.</li>
-                    <li>Created and maintained deployment and configuration documentation for internal engineering reference.</li>
-                  </ul>
-                </div>
-              </div>
-
-              <div id="resume-education" class="resume-section">
-                <h4>◆ Education</h4>
-                <div class="resume-item">
-                  <h5>Bachelor of Computer Engineering</h5>
-                  <p class="resume-meta"> Nutan Maharashtra Institute of Engineering and Technology
-                  · Aug 2020 – Jun 2024
-                  </p>
-                  <p> Pune, Maharashtra</p>
-                  <p><strong>CGPA: 8.85 / 10</strong> </p>
-                </div>
-              </div>
-
-              <div id="resume-core" class="resume-section">
-                <h4>◆ Core Competencies</h4>
-                <div class="resume-tags">
-                   <span>Infrastructure Automation</span>
-                   <span>CI/CD</span>
-                   <span>Containerization</span>
-                   <span>Infrastructure as Code</span>
-                   <span>Security &amp; Compliance</span>
-                   <span>Database Migration</span>
-                   <span>BCP / DR</span>
-                   <span>Cost Optimization</span>
-                   <span>Deployment Automation</span>
-                </div>
-              </div>
-
-              <div id="resume-tools" class="resume-section">
-                <h4>◆ Tools & Technologies</h4>
-                <div class="resume-tags">
-                   <span>AWS</span>
-                   <span>Azure</span>
-                   <span>Aviatrix</span>
-
-                   <span>Python</span>
-                   <span>Bash</span>
-                   <span>Groovy</span>
-
-                   <span>Jenkins</span>
-                   <span>Docker</span>
-                   <span>Kubernetes</span>
-                   <span>Helm</span>
-                   <span>ArgoCD</span>
-
-                   <span>Terraform</span>
-                   <span>Ansible</span>
-                   <span>Chef</span>
-
-                   <span>Prometheus</span>
-                   <span>Grafana</span>
-                   <span>CloudWatch</span>
-
-                   <span>Linux</span>
-                   <span>Git</span>
-                   <span>GitHub</span>
-
+                  <!-- Location -->
+                  <div class="channel-card">
+                    <div class="channel-left">
+                      <div class="channel-icon">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                          <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+                          <circle cx="12" cy="10" r="3"></circle>
+                        </svg>
+                      </div>
+                      <div class="channel-details">
+                        <span class="channel-label">Location</span>
+                        <span class="channel-value">Pune, Maharashtra, India</span>
+                      </div>
+                    </div>
+                    <span style="color: #10b981; font-size: 0.8rem; font-weight: 700;">IST (UTC+5:30)</span>
+                  </div>
                 </div>
               </div>
             </div>
+
+            <!-- Right Card: Interactive SaaS Contact Form -->
+            <div class="contact-form-card">
+              <h3>Send a Message</h3>
+              <p class="form-sub">Have an opportunity, inquiry, or question? Send a note directly below.</p>
+
+              <form class="modern-form" id="portfolio-contact-form">
+                <div class="form-field">
+                  <label for="contact-name" class="form-label">Full Name</label>
+                  <input
+                    type="text"
+                    id="contact-name"
+                    name="name"
+                    class="form-input"
+                    placeholder="Jane Doe"
+                    required
+                  />
+                </div>
+
+                <div class="form-field">
+                  <label for="contact-email" class="form-label">Email Address</label>
+                  <input
+                    type="email"
+                    id="contact-email"
+                    name="email"
+                    class="form-input"
+                    placeholder="jane@company.com"
+                    required
+                  />
+                </div>
+
+                <div class="form-field">
+                  <label for="contact-message" class="form-label">Message</label>
+                  <textarea
+                    id="contact-message"
+                    name="message"
+                    class="form-textarea"
+                    placeholder="Tell me about your project or opportunity..."
+                    required
+                  ></textarea>
+                </div>
+
+                <button type="submit" class="btn btn-primary form-submit-btn" id="contact-submit-btn">
+                  <span>Send Message</span>
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <line x1="22" y1="2" x2="11" y2="13"></line>
+                    <polygon points="22 2 15 22 11 13 2 9 22 2"></polygon>
+                  </svg>
+                </button>
+              </form>
             </div>
           </div>
         </div>
       </section>
     </main>
 
-      <section id="contact" class="section contact-section">
-        <div class="container">
+    <!-- Site Footer -->
+    <footer class="site-footer">
+      <div class="container footer-inner">
+        <p class="footer-copy">
+          &copy; 2026 Viren Lahamage. All rights reserved.
+        </p>
+      </div>
+    </footer>
 
-          <div class="section-heading contact-heading">
-            <p class="eyebrow">GET IN TOUCH</p>
-            <h2>Let’s build something reliable together.</h2>
-            <p>
-              Have a project, opportunity, or just want to connect?
-              Feel free to reach out.
-            </p>
-          </div>
+    <!-- Global Toast Notification Container -->
+    <div class="toast-notification" id="toast" role="status" aria-live="polite">
+      <span class="toast-icon">✓</span>
+      <span class="toast-message" id="toast-text">Message sent successfully!</span>
+    </div>
 
-          <div class="contact-grid">
-
-            <!-- Contact Information -->
-            <div class="contact-info">
-
-              <h3>Let’s Connect</h3>
-
-              <p class="contact-intro">
-                I’m open to connecting about DevOps, cloud engineering,
-                automation, infrastructure, and new career opportunities.
-              </p>
-
-              <div class="contact-items">
-
-                <!-- Email -->
-                <a
-                  href="mailto:virenlahamage2020@gmail.com"
-                  class="contact-item"
-                >
-                  <span class="contact-icon">✉</span>
-
-                  <div>
-                    <span class="contact-label">Email</span>
-                    <span class="contact-value">
-                      virenlahamage2020@gmail.com
-                    </span>
-                  </div>
-                </a>
-
-
-                <!-- LinkedIn -->
-                <a
-                  href="https://www.linkedin.com/in/Virenlahamage"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  class="contact-item"
-                >
-                  <span class="contact-icon">in</span>
-
-                  <div>
-                    <span class="contact-label">LinkedIn</span>
-                    <span class="contact-value">
-                      linkedin.com/in/Virenlahamage
-                    </span>
-                  </div>
-                </a>
-
-
-                <!-- GitHub -->
-                <a
-                  href="https://github.com/viren051205"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  class="contact-item"
-                >
-                  <span class="contact-icon">⌘</span>
-
-                  <div>
-                    <span class="contact-label">GitHub</span>
-                    <span class="contact-value">
-                      github.com/viren051205
-                    </span>
-                  </div>
-                </a>
-
-
-                <!-- Location -->
-                <div class="contact-item">
-                  <span class="contact-icon">⌖</span>
-
-                  <div>
-                    <span class="contact-label">Location</span>
-                    <span class="contact-value">
-                      Pune, Maharashtra, India
-                    </span>
-                  </div>
-                </div>
-
-              </div>
-
-            </div>
-
-
-            <!-- Send Message -->
-            <div class="contact-form-card">
-
-              <h3>Send a Message</h3>
-
-              <form>
-
-                <div class="form-group">
-                  <label for="contact-name">Name</label>
-
-                  <input
-                    type="text"
-                    id="contact-name"
-                    name="name"
-                    placeholder="Your name"
-                  />
-                </div>
-
-
-                <div class="form-group">
-                  <label for="contact-email">Email</label>
-
-                  <input
-                    type="email"
-                    id="contact-email"
-                    name="email"
-                    placeholder="your@email.com"
-                  />
-                </div>
-
-
-                <div class="form-group">
-                  <label for="contact-message">Message</label>
-
-                  <textarea
-                    id="contact-message"
-                    name="message"
-                    rows="5"
-                    placeholder="Tell me about your project or opportunity..."
-                  ></textarea>
-                </div>
-
-
-                <button
-                  type="submit"
-                  class="contact-submit"
-                >
-                  Send Message
-                  <span>↗</span>
-                </button>
-
-              </form>
-
-            </div>
-
-          </div>
-
-        </div>
-      </section>
-
-    <script>
-      /*
-       * Portfolio navigation
-       * Handles navigation from every section, not only Home.
-       * The navbar is fixed, so scroll to the target with a 90px offset.
-       */
-      (function () {
-        const NAV_OFFSET = 90;
-
-        function scrollToTarget(id, updateHash) {
-          const target = document.getElementById(id);
-          if (!target) return;
-
-          const top =
-            target.getBoundingClientRect().top +
-            window.pageYOffset -
-            NAV_OFFSET;
-
-          window.scrollTo({
-            top: Math.max(0, top),
-            behavior: "smooth"
-          });
-
-          if (updateHash) {
-            history.pushState(null, "", "#" + id);
-          }
-        }
-
-        document.addEventListener("DOMContentLoaded", function () {
-          document.querySelectorAll(".nav-links a[href^='#']").forEach(function (link) {
-            link.addEventListener("click", function (event) {
-              const id = link.getAttribute("href").slice(1);
-
-              if (!document.getElementById(id)) return;
-
-              event.preventDefault();
-              event.stopPropagation();
-              scrollToTarget(id, true);
-            });
-          });
-
-          document.querySelectorAll(".hero-actions a[href^='#']").forEach(function (link) {
-            link.addEventListener("click", function (event) {
-              const id = link.getAttribute("href").slice(1);
-
-              if (!document.getElementById(id)) return;
-
-              event.preventDefault();
-              scrollToTarget(id, true);
-            });
-          });
-
-          /* If the page opens directly with #about, #skills, etc. */
-          if (window.location.hash) {
-            const id = window.location.hash.slice(1);
-
-            setTimeout(function () {
-              if (document.getElementById(id)) {
-                scrollToTarget(id, false);
-              }
-            }, 100);
-          }
-        });
-
-        window.addEventListener("popstate", function () {
-          const id = window.location.hash.slice(1);
-
-          if (id && document.getElementById(id)) {
-            scrollToTarget(id, false);
-          }
-        });
-      })();
-    </script>
+    <!-- Interactive Portfolio Logic -->
+    <script src="script.js"></script>
   </body>
 </html>
